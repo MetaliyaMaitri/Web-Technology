@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GCD</title>
+</head>
+<body>
+	<script type="text/javascript">
+		gcd=0;
+		b=0;
+		b[100];
+		n1=parseInt(prompt("ENter n1 :"));
+		n2=parseInt(prompt("ENter n2 :"));
+		if(n1>n2)
+		{
+			b=n1/2;
+		}
+		else
+		{
+			b=n2/2
+		}
+		for(i=1;i<=b;i++)
+		{
+			if(n1%i==0&&n2%i==0)
+			{
+				gcd=i;
+			}
+		}
+		document.write("gcd  :"+gcd)
+	</script>
+
+</body>
+</html>
