@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title >LOGIN PAGE</title>
+	<style type="text/css">
+		input[type="button"]
+		{
+			background: lightgrey;
+			font-size: 25px;
+		}
+		input[type="text"]
+		{
+			background: lightgrey;
+			font-size: 25px;
+		}
+		input[type = "Password"]
+		{
+			background: lightgrey;
+			font-size: 25px;
+		}
+	</style>
+</head>
+
+<body>
+	<table border="1 px">
+		<tr>
+			<td style="font-size: 25px;">Username</td>
+			<td><input type="text" id = "user"></td>
+		</tr>
+		<tr>
+			<td style="font-size :25px">Password</td>
+			<td><input type="Password" id = "password"></td>
+			<td><input type="button" value = "show" id = "show" onclick="showhide()"></td>
+		</tr>
+		<tr>
+			<td colspan="3" align="center"> <input type="button" value="submit" id ="submit" onclick="submit()"></td>
+		</tr>
+
+	</table>
+	<script type="text/javascript">
+		function showhide()
+		{
+			p = document.getElementById("password");
+			c=document.getElementById("show");
+			if(p.type=="password"){
+				p.type="text";
+				c.value = "hide";
+			}
+				else
+				{
+					p.type="password";
+					c.value="show";
+				}
+		}
+		function submit()
+		{
+			username = document.getElementById("user").value;
+			password=document.getElementById("password").value;
+			if(username=="Maitri76")
+			{
+				if(password=="maitri1111")
+				{
+					document.write("Valid user");
+				}
+				else
+				{
+					document.write("Invalid password");
+				}
+			}
+			else 
+			{
+				document.write("Invalid username")
+			}
+		}
+	</script>
+</body>
+</html>
